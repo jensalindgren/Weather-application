@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!-- Header -->
+        <div class="row header">
+            <div class="col-12 text-center">
+                <h1>Weather App</h1>
+            </div>
+        </div>
+
+        <!-- Search box -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-location-dot"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Enter your location">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Not Found (Invalid Location) -->
+        <div class="row not-found mt-3">
+            <div class="col-12 text-center">
+                <img src="images/404.png" alt="Not Found">
+                <p>Oops! Invalid location :/</p>
+            </div>
+        </div>
+
+        <!-- Weather Box (Current Weather) -->
+        <div class="row weather-box mt-3">
+            <div class="col-12 text-center">
+                <img src="" alt="Weather Icon">
+                <p class="temperature"></p>
+                <p class="description"></p>
+            </div>
+        </div>
+
+        <!-- Weather Details (Current Humidity and Wind Speed) -->
+        <div class="row weather-details mt-3">
+            <div class="col-6 text-center humidity">
+                <i class="fas fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col-6 text-center wind">
+                <i class="fas fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forecast Container -->
+        <div class="row forecast-container mt-5">
+            <div class="col-12">
+                <h2 class="text-center">Forecast</h2>
+                <div class="forecast">
+                    <!-- Forecast data for the next 5 days will be displayed here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row footer mt-5">
+            <div class="col-12 text-center">
+                <p>Created by: Jens Lindgren</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+</body>
+
+</html>
