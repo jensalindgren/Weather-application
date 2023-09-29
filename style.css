@@ -112,6 +112,16 @@ body {
     margin-top: 20px;
 }
 
+.unit {
+    color: #343a40;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .humidity span,
 .wind span {
     color: #343a40;
