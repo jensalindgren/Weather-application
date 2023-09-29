@@ -1,5 +1,3 @@
-// forecast.js
-
 function displayForecast(city, forecastContainer) {
     const APIKey = 'd8d5d9e6b1ffc2fcbf1c3ab0bec153e6';
 

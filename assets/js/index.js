@@ -4,10 +4,10 @@ const search = document.querySelector('.input-group button');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
-const forecastContainer = document.querySelector('.forecast-container .forecast');
 const currentDayElement = document.querySelector('.current-day');
 const temperatureUnitSelect = document.getElementById('temperature-unit');
 const windSpeedUnitSelect = document.getElementById('wind-speed-unit');
+const forecastContainer = document.querySelector('.forecast');
 
 // Event Listener for the Search Button
 search.addEventListener('click', () => {
@@ -149,19 +149,19 @@ function updateWeatherData() {
 
             switch (json.weather[0].main) {
                 case 'Clouds':
-                    weatherImage.src = 'images/cloud.png';
+                    weatherImage.src = '/assets/images/cloud.png';
                     break;
                 case 'Clear':
-                    weatherImage.src = 'images/clear.png';
+                    weatherImage.src = '/assets/images/clear.png';
                     break;
                 case 'Rain':
-                    weatherImage.src = 'images/rain.png';
+                    weatherImage.src = '/assets/images/rain.png';
                     break;
                 case 'Snow':
-                    weatherImage.src = 'images/snow.png';
+                    weatherImage.src = '/assets/images/snow.png';
                     break;
                 case 'Mist':
-                    weatherImage.src = 'images/mist.png';
+                    weatherImage.src = '/assets/images/mist.png';
                     break;
                 default:
                     weatherImage.src = '';
