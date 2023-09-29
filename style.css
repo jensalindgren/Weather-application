@@ -7,17 +7,21 @@
 
 /* Global Styles */
 body {
-    background-color: #98b9da;
+    background-image: linear-gradient( to bottom right, #3489dd, #d2dae7);
     font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
 }
 
 .container-fluid {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 35px;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
 }
 
@@ -81,7 +85,7 @@ body {
 
 .weather-box img {
     max-width: 100%;
-    height: auto;
+    max-height: 200px;
 }
 
 .temperature {
@@ -136,8 +140,11 @@ body {
     background-color: #f8f9fa;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
+    margin: 10px 10px ;
     padding: 10px;
+    height: 200px;
+    display: inline-block;
+    width: 200px;
 }
 
 .day {
@@ -158,4 +165,10 @@ body {
     font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
+}
+
+.forecast-item img {
+    max-width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin: 10px auto; /* Add some margin to center the images */
 }
