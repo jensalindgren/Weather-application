@@ -56,7 +56,7 @@ function fetchAndUpdateWeatherData(city, temperatureUnit, windSpeedUnit) {
                 case 'Snow':
                     weatherImage.src = 'assets/images/snow.png';
                     break;
-                case 'Fog':
+                case 'Mist':
                     weatherImage.src = 'assets/images/mist.png';
                     break;
                 default:

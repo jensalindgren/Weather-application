@@ -50,7 +50,7 @@ function displayForecast(city, forecastContainer) {
                     case 'Snow':
                         forecastImage.src = 'assets/images/snow.png';
                         break;
-                    case 'Fog':
+                    case 'Mist':
                         forecastImage.src = 'assets/images/mist.png';
                         break;
                     default:
