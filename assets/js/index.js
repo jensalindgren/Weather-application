@@ -60,8 +60,10 @@ function fetchAndUpdateWeatherData(city, temperatureUnit, windSpeedUnit) {
                     weatherImage.src = 'assets/images/mist.png';
                     break;
                 default:
-                    weatherImage.src = '';
+                    // Handle unknown weather conditions or set a default image
+                    weatherImage.src = ''; 
             }
+            
 
             // Display temperature with the selected unit
             if (temperatureUnit === 'metric') {
