@@ -37,27 +37,25 @@ function displayForecast(city, forecastContainer) {
 
                 // Set the forecast image source based on weather
                 const forecastImage = forecastItemElement.querySelector('.forecast-image');
-                switch (json.weather[0].main) {
+                switch (forecastItem.weather[0].main) {
                     case 'Clouds':
-                        weatherImage.src = 'assets/images/cloud.png';
+                        forecastImage.src = 'assets/images/cloud.png';
                         break;
                     case 'Clear':
-                        weatherImage.src = 'assets/images/clear.png';
+                        forecastImage.src = 'assets/images/clear.png';
                         break;
                     case 'Rain':
-                        weatherImage.src = 'assets/images/rain.png';
+                        forecastImage.src = 'assets/images/rain.png';
                         break;
                     case 'Snow':
-                        weatherImage.src = 'assets/images/snow.png';
+                        forecastImage.src = 'assets/images/snow.png';
                         break;
                     case 'Mist':
-                        weatherImage.src = 'assets/images/mist.png';
+                        forecastImage.src = 'assets/images/mist.png';
                         break;
                     default:
-                        // Handle unknown weather conditions or set a default image
-                        weatherImage.src = ''; 
+                        forecastImage.src = '';
                 }
-                
 
                 forecastContainer.appendChild(forecastItemElement);
             }
