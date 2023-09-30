@@ -39,19 +39,19 @@ function displayForecast(city, forecastContainer) {
                 const forecastImage = forecastItemElement.querySelector('.forecast-image');
                 switch (forecastItem.weather[0].main) {
                     case 'Clouds':
-                        forecastImage.src = '/assets/images/cloud.png';
+                        forecastImage.src = 'assets/images/cloud.png';
                         break;
                     case 'Clear':
-                        forecastImage.src = '/assets/images/clear.png';
+                        forecastImage.src = 'assets/images/clear.png';
                         break;
                     case 'Rain':
-                        forecastImage.src = '/assets/images/rain.png';
+                        forecastImage.src = 'assets/images/rain.png';
                         break;
                     case 'Snow':
-                        forecastImage.src = '/assets/images/snow.png';
+                        forecastImage.src = 'assets/images/snow.png';
                         break;
                     case 'Fog':
-                        forecastImage.src = '/assets/images/mist.png';
+                        forecastImage.src = 'assets/images/mist.png';
                         break;
                     default:
                         forecastImage.src = '';

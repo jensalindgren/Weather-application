@@ -45,19 +45,19 @@ function fetchAndUpdateWeatherData(city, temperatureUnit, windSpeedUnit) {
 
             switch (json.weather[0].main) {
                 case 'Clouds':
-                    weatherImage.src = '/assets/images/cloud.png';
+                    weatherImage.src = 'assets/images/cloud.png';
                     break;
                 case 'Clear':
-                    weatherImage.src = '/assets/images/clear.png';
+                    weatherImage.src = 'assets/images/clear.png';
                     break;
                 case 'Rain':
-                    weatherImage.src = '/assets/images/rain.png';
+                    weatherImage.src = 'assets/images/rain.png';
                     break;
                 case 'Snow':
-                    weatherImage.src = '/assets/images/snow.png';
+                    weatherImage.src = 'assets/images/snow.png';
                     break;
                 case 'Fog':
-                    weatherImage.src = '/assets/images/mist.png';
+                    weatherImage.src = 'assets/images/mist.png';
                     break;
                 default:
                     weatherImage.src = '';
